@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information Retrieval</title>
+</head>
+<body>
+
+<center>
+
+<!-- inverted index display-->
+
+<div id="inv" style="display: none;">
+
+{%   if inv    %}
+
+	{%  for ke,value in inv.iteritems()  %}
+
+		{{ ke  }} ->     {{ value }}<br>
+
+	{% endfor %}
+
+{%  else   %}
+
+	<font color="red" size="6"> There was error in genertation the inverted index. Please try again!   </font>
+
+{% endif  %}
+
+
+
+
+
+</div>
+
+<br>
+show-hide inverted index:
+<br>
+<input type="submit" name="show-hide inverted index" onclick="nihar()"></input>
+
+<br>
+<br>
+<form action="http://localhost:5000/query" method="POST">
+Enter Query:
+<input type="text" name="query">
+
+
+<br>
+<br>
+
+<input type="submit" name="submit"/>
+</form>
+</center>
+</body>
+<script>
+
+function nihar()
+{
+
+	if(document.getElementById("inv").style.display == "none")
+	{
+
+		document.getElementById("inv").style.display = 'block';
+
+	}	
+	else
+		document.getElementById("inv").style.display = "none";
+
+
+}
+
+</script>
+</html>

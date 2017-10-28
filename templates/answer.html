@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boolean Retrieval Model</title>
+</head>
+<body>
+
+<center>
+<pre>
+{% if ans   %}
+
+<font color="green" size="5">  The Input query: {{  query }}   </font>
+<font color="blue" size="6">   
+the final postings list for the query is: {{ ans }}  
+</font>
+{% else %}
+<font color="red" size="6"> 
+There were no matches found for the Input query!
+
+{% endif %}
+
+</pre>
+</center>
+
+
+</body>
+</html>
