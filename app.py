@@ -10,7 +10,11 @@ import re
 a=defaultdict(list);
 
 # stop words
+<<<<<<< HEAD
+stop_words = ['is','to','can','the','they','or','and','me','I','was','in','on'];
+=======
 stop_words = ['is','to','can','the','they','or','and','me','I'];
+>>>>>>> 7e78d7a7cb2dd2f32a73f0d0b7efeea27554bae5
 
 #length dictionary for query optimization
 length= {'init':0};

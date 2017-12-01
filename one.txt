@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+Calipurnia is lada 
+Creteria is chaava
+brit is lada
+=======
 Calipurnia is lavda 
 Creteria is chaava
 brit is lavda
+>>>>>>> 7e78d7a7cb2dd2f32a73f0d0b7efeea27554bae5
